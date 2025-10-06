@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "Kafka.Example.Producer.Protos";
+import "google/protobuf/timestamp.proto";
+
+
+message PersonLoggedIn {
+	 string UserName = 1;
+     google.protobuf.Timestamp LoggedInDate   = 2; 
+	 int32 UserId=3;
+}
